@@ -1,11 +1,11 @@
-import { KidsSong, TabNote, Duration } from './types'
+import type { KidsSong, TabNote, Duration } from './types'
 
 /**
  * Convert our simple KidsSong JSON into alphaTex.
  * We keep it *monophonic* and simple (perfect for kids’ melodies).
  * Notes are written like "fret/string" and we re-state duration when it changes (":q", ":8", etc.).
  */
-function songToAlphaTex(song: KidsSong): string {
+export function songToAlphaTex(song: KidsSong): string {
   const title = safeAlphaTexString(song.title || 'Untitled')
   const tempo = Math.max(40, Math.min(song.tempo ?? 100, 300))
   const time = song.time ?? { num: 4, den: 4 }

@@ -1,6 +1,6 @@
-import { KidsSong } from '../types';
+import type { KidsSong } from '../types';
 
-const mary: KidsSong = {
+export const mary: KidsSong = {
   title: 'Mary Had a Little Lamb',
   tempo: 100,
   time: { num: 4, den: 4 },
@@ -20,6 +20,5 @@ const mary: KidsSong = {
         { fret: 0, string: 1, dur: 'h' },
       ],
     },
-    // add more measures as needed...
   ],
 }

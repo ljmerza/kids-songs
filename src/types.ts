@@ -1,4 +1,4 @@
-type Duration = 'w' | 'h' | 'q' | '8' | '16' | '32'
+export type Duration = 'w' | 'h' | 'q' | '8' | '16' | '32'
 
 export type TabNote = {
   // 1 = high E string, 6 = low E string (standard TAB convention)

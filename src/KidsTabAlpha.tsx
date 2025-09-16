@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
 import * as alphaTab from '@coderline/alphatab'
-import { KidsSong } from './types'
+import type { KidsSong } from './types'
 import { songToAlphaTex } from './utils'
 
 type Props = {
@@ -20,9 +20,6 @@ export default function KidsTabAlpha({
 
   // Build alphaTex whenever the JSON changes
   const alphaTex = useMemo(() => songToAlphaTex(song), [song])
-
-  // Local UI state for playback speed (1.0 = normal)
-  const [speed, setSpeed] = useState(1)
 
   useEffect(() => {
     if (!hostRef.current) return
@@ -48,9 +45,6 @@ export default function KidsTabAlpha({
       display: { scale: 1.0 }, // adjust if you want bigger/smaller
     })
 
-    // Optional: tie the cursor to playback
-    api.scoreRenderer.cursor.playbackSpeed = speed
-
     // Store instance
     apiRef.current = api
 
@@ -62,20 +56,6 @@ export default function KidsTabAlpha({
       apiRef.current = null
     }
   }, [alphaTex]) // re-run when song changes
-
-  // Keep alphaTab playback speed in sync with UI slider
-  useEffect(() => {
-    const api = apiRef.current
-    if (!api) return
-    try {
-      // If available in your alphaTab version:
-      // api.changePlaybackSpeed?.(speed);
-      // Fallback: set directly on cursor (works in recent builds):
-      api.scoreRenderer.cursor.playbackSpeed = speed
-    } catch {
-      // ignore if not supported
-    }
-  }, [speed])
 
   return (
     <div className={className}>
@@ -109,19 +89,6 @@ export default function KidsTabAlpha({
           <button onClick={() => apiRef.current?.play()}>Play</button>
           <button onClick={() => apiRef.current?.pause()}>Pause</button>
           <button onClick={() => apiRef.current?.stop()}>Stop</button>
-
-          <label style={{ marginLeft: 16 }}>
-            Speed: <strong>{speed.toFixed(2)}x</strong>
-          </label>
-          <input
-            type="range"
-            min={0.5}
-            max={1.5}
-            step={0.05}
-            value={speed}
-            onChange={(e) => setSpeed(parseFloat(e.target.value))}
-            style={{ width: 160 }}
-          />
         </div>
       )}
     </div>
