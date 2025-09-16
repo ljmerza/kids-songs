@@ -1,10 +1,10 @@
 import './App.css'
 
-import KidsTabAlpha from './KidsTabAlpha'
+import TabRenderer from './TabRenderer'
 import { mary } from './songs/mary';
 
 function App() {
-  return <KidsTabAlpha song={mary} />;
+  return <TabRenderer song={mary} />;
 }
 
 export default App

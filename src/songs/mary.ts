@@ -7,7 +7,7 @@ export const mary: KidsSong = {
   measures: [
     {
       notes: [
-        { fret: 0, string: 1, dur: 'q' },
+        { fret: 0, string: 3, dur: 'q' },
         { fret: 2, string: 1, dur: 'q' },
         { fret: 4, string: 1, dur: 'q' },
         { fret: 2, string: 1, dur: 'q' },

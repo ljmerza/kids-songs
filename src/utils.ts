@@ -1,57 +1,76 @@
-import type { KidsSong, TabNote, Duration } from './types'
+import type { KidsSong, TabNote, Duration } from "./types";
 
-/**
- * Convert our simple KidsSong JSON into alphaTex.
- * We keep it *monophonic* and simple (perfect for kids’ melodies).
- * Notes are written like "fret/string" and we re-state duration when it changes (":q", ":8", etc.).
- */
+// Map your durations ("q","h","8",...) to alphaTex numeric values.
+const DUR_MAP: Record<Duration, number> = {
+  w: 1,  // whole
+  h: 2,  // half
+  q: 4,  // quarter
+  "8": 8,
+  "16": 16,
+  "32": 32,
+};
+
 export function songToAlphaTex(song: KidsSong): string {
-  const title = safeAlphaTexString(song.title || 'Untitled')
-  const tempo = Math.max(40, Math.min(song.tempo ?? 100, 300))
-  const time = song.time ?? { num: 4, den: 4 }
+  const title = safeAlphaTexString(song.title || "Untitled");
+  const tempo = clamp(song.tempo ?? 100, 40, 300);
+  const time = song.time ?? { num: 4, den: 4 };
 
-  // Header: title + a TAB-only stave. (alphaTab defaults to standard tuning)
-  const header: string[] = [
-    `title "${title}"`,
-    `tabstave notation=false time=${time.num}/${time.den} tempo=${tempo}`,
-  ]
+  // Score metadata (must end with a single dot line)
+  const meta: string[] = [
+    `\\title "${title}"`,
+    `\\tempo ${tempo}`,
+  ];
 
-  // Body: render measures; re-emit duration marker when it changes.
-  const body: string[] = []
+  // Optional tuning if you have it; alphaTab expects high->low like E4 B3 G3 D3 A2 E2
+  if (song.tuning?.length) {
+    // join with spaces, e.g., E4 B3 G3 D3 A2 E2
+    meta.push(`\\tuning ${song.tuning.join(" ")}`);
+  }
+  meta.push("."); // end of score metadata
+
+  // Start a single track/staff and show only TAB
+  const preface = `\\track \\staff{tabs}`;
+
+  // Body: measures using numeric durations and dot separators.
+  const bars: string[] = [];
   for (let m = 0; m < song.measures.length; m++) {
-    const measure = song.measures[m]
+    const measure = song.measures[m];
     if (!measure?.notes?.length) {
-      body.push('|') // empty bar
-      continue
+      bars.push("|");
+      continue;
     }
+    let currentDur: number | null = null;
+    const parts: string[] = [];
 
-    let currentDur: Duration | null = null
-    const parts: string[] = []
+    // Put the time signature on the first bar (optional)
+    if (m === 0 && time?.num && time?.den) {
+      parts.push(`\\ts ${time.num} ${time.den}`);
+    }
 
     for (const n of measure.notes) {
-      if (!isValidNote(n)) continue
-      if (n.dur !== currentDur) {
-        parts.push(`:${n.dur}`)
-        currentDur = n.dur as Duration
+      if (!isValidNote(n)) continue;
+      const dur = DUR_MAP[n.dur];
+      if (dur && dur !== currentDur) {
+        parts.push(`:${dur}`);
+        currentDur = dur;
       }
-      // alphaTex strings are numbered 1..6 (1=highest string)
-      // Write as fret/string, e.g. 0/1 2/2 etc.
-      parts.push(`${n.fret}/${n.string}`)
+      // alphaTex notes use fret.string (dot), NOT slash
+      parts.push(`${n.fret}.${n.string}`);
     }
 
-    body.push(parts.join(' ') + ' |')
+    bars.push(parts.join(" ") + " |");
   }
 
-  return [...header, 'notes', body.join(' ')].join('\n')
+  return [...meta, preface, bars.join(" ")].join("\n");
 }
 
 function safeAlphaTexString(s: string): string {
-  // very light escaping for quotes/newlines
-  return s.replace(/"/g, '\\"').replace(/\n/g, ' ')
+  return s.replace(/"/g, '\\"').replace(/\n/g, " ");
 }
-
+function clamp(n: number, lo: number, hi: number) {
+  return Math.max(lo, Math.min(n, hi));
+}
 function isValidNote(n: TabNote): boolean {
-  if (typeof n?.fret !== 'number' || typeof n?.string !== 'number') return false
-  if (n.string < 1 || n.string > 6) return false
-  return true
+  if (typeof n?.fret !== "number" || typeof n?.string !== "number") return false;
+  return n.string >= 1 && n.string <= 6;
 }

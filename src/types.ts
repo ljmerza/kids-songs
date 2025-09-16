@@ -5,7 +5,6 @@ export type TabNote = {
   string: number // 1..6
   fret: number // 0..(whatever)
   dur: Duration // note duration (whole, half, quarter, etc.)
-  // (Keep it simple for kids’ songs—single notes. You can extend later.)
 }
 
 export type TabMeasure = {
