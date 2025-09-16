@@ -1,28 +1,32 @@
-// KidsTabAlpha.tsx
 import { useEffect, useMemo, useRef } from "react";
-import * as alphaTab from "@coderline/alphatab";
+import { AlphaTabApi, type json } from '@coderline/alphatab'
 import { songToAlphaTex } from "./utils";
 import type { KidsSong } from "./types";
 
 export default function TabRenderer({ song }: { song: KidsSong }) {
   const hostRef = useRef<HTMLDivElement | null>(null);
-  const apiRef = useRef<alphaTab.AlphaTabApi | null>(null);
+  const apiRef = useRef<AlphaTabApi | null>(null);
 
   const alphaTex = useMemo(() => songToAlphaTex(song), [song]);
 
   useEffect(() => {
     if (!hostRef.current) return;
 
-    const api = new alphaTab.AlphaTabApi(hostRef.current, {
+    const api = new AlphaTabApi(hostRef.current, {
       core: {
-        useWorkers: false,
-        fontDirectory:
-          "https://cdn.jsdelivr.net/npm/@coderline/alphatab@1.6.3/dist/font/",
+        useWorkers: true,
+        fontDirectory: "/font/",
       },
-      player: { enablePlayer: true },
+      player: {
+        enablePlayer: true,
+        enableCursor: true,
+        enableUserInteraction: true,
+        soundFont: '/soundfont/sonivox.sf2'
+      },
       notation: { staveProfile: "tab" },
       display: { scale: 1.0 },
-    });
+    } as json.SettingsJson);
+
     apiRef.current = api;
 
     api.error.on((e) => console.error("[alphaTab error]", e));

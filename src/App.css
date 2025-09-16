@@ -1,5 +1,5 @@
 .tab-host {
-  width: 100%;
+  width: 96vw;
   min-height: 280px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -10,4 +10,8 @@
   margin-top: 8px;
   display: flex;
   gap: 8px;
+}
+
+.at-surface.at > div:last-child {
+  display: none !important;
 }
