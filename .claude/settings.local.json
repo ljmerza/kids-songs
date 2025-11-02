@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:ravitheguitarist.blogspot.com)",
+      "WebFetch(domain:www.kidsplaymusic.com)",
+      "WebFetch(domain:www.acousterr.com)",
+      "WebFetch(domain:tabs.ultimate-guitar.com)",
+      "WebFetch(domain:easysongstoplay.blogspot.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

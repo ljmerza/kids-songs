@@ -30,9 +30,9 @@ export default function TabRenderer({ song }: { song: KidsSong }) {
     apiRef.current = api;
 
     api.error.on((e) => console.error("[alphaTab error]", e));
-    api.scoreLoaded.on(() => console.log("[alphaTab] scoreLoaded"));
-    api.renderStarted.on(() => console.log("[alphaTab] renderStarted"));
-    api.renderFinished.on(() => console.log("[alphaTab] renderFinished"));
+    api.scoreLoaded.on(() => console.debug("[alphaTab] scoreLoaded"));
+    api.renderStarted.on(() => console.debug("[alphaTab] renderStarted"));
+    api.renderFinished.on(() => console.debug("[alphaTab] renderFinished"));
 
     // feed alphaTex
     api.tex(alphaTex);
