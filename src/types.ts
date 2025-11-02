@@ -13,8 +13,10 @@ export type TabMeasure = {
 
 export type KidsSong = {
   title: string
+  category: string
+  tags: Array<string>
   // optional; alphaTab defaults to standard tuning if omitted.
-  // You can pass things like ["E4","B3","G3","D3","A2","E2"], but we won’t need it for basic usage.
+  // You can pass things like ["E4","B3","G3","D3","A2","E2"], but we won't need it for basic usage.
   tuning?: Array<string>
   tempo?: number // e.g. 100
   time?: { num: number; den: number } // e.g. { num: 4, den: 4 }

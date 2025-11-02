@@ -2,28 +2,45 @@
 
 A reference list of popular children's songs that could be added to this project.
 
-## Currently Implemented
+## Currently Implemented (21 songs)
 - [x] Mary Had a Little Lamb
 - [x] ABC Song (Alphabet Song)
 - [x] Baa Baa Black Sheep
 - [x] Itsy Bitsy Spider
+- [x] Twinkle Twinkle Little Star
+- [x] Row Row Row Your Boat
+- [x] The Wheels on the Bus
+- [x] Old MacDonald Had a Farm
+- [x] Head, Shoulders, Knees and Toes
+- [x] If You're Happy and You Know It
+- [x] London Bridge Is Falling Down
+- [x] Hickory Dickory Dock
+- [x] Humpty Dumpty
+- [x] Jack and Jill
+- [x] Five Little Monkeys
+- [x] This Old Man
+- [x] B-I-N-G-O
+- [x] You Are My Sunshine
+- [x] Little Miss Muffet
+- [x] Ring Around the Rosie
+- [x] Pop Goes the Weasel
 
-## Classic Nursery Rhymes
-- [ ] Twinkle Twinkle Little Star
-- [ ] Row Row Row Your Boat
-- [ ] The Wheels on the Bus
-- [ ] Old MacDonald Had a Farm
-- [ ] Head, Shoulders, Knees and Toes
-- [ ] If You're Happy and You Know It
-- [ ] London Bridge Is Falling Down
-- [ ] Hickory Dickory Dock
-- [ ] Humpty Dumpty
-- [ ] Jack and Jill
-- [ ] Little Miss Muffet
-- [ ] Five Little Monkeys
-- [ ] Ring Around the Rosie
-- [ ] This Old Man
-- [ ] Pop Goes the Weasel
+## Classic Nursery Rhymes (All Complete!)
+- [x] Twinkle Twinkle Little Star
+- [x] Row Row Row Your Boat
+- [x] The Wheels on the Bus
+- [x] Old MacDonald Had a Farm
+- [x] Head, Shoulders, Knees and Toes
+- [x] If You're Happy and You Know It
+- [x] London Bridge Is Falling Down
+- [x] Hickory Dickory Dock
+- [x] Humpty Dumpty
+- [x] Jack and Jill
+- [x] Little Miss Muffet
+- [x] Five Little Monkeys
+- [x] Ring Around the Rosie
+- [x] This Old Man
+- [x] Pop Goes the Weasel
 
 ## Action Songs
 - [ ] Baby Shark
@@ -54,13 +71,13 @@ A reference list of popular children's songs that could be added to this project
 - [ ] Frosty the Snowman
 - [ ] Rudolph the Red-Nosed Reindeer
 - [ ] Happy Birthday
-- [ ] You Are My Sunshine
+- [x] You Are My Sunshine
 
 ## Folk Songs
 - [ ] She'll Be Coming Round the Mountain
 - [ ] Oh Where, Oh Where Has My Little Dog Gone
 - [ ] Skip to My Lou
-- [ ] B-I-N-G-O
+- [x] B-I-N-G-O
 - [ ] Do Your Ears Hang Low
 - [ ] Down by the Bay
 
