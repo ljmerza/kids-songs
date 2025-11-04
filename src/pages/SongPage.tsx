@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
-import { Container, Button, Badge } from 'react-bootstrap';
+import { Container, Badge } from 'react-bootstrap';
 import { songs } from '../songs';
-import { TabRenderer } from '../TabRenderer';
+import TabRenderer from '../TabRenderer';
 
 export function SongPage() {
   const { songId } = useParams<{ songId: string }>();
