@@ -1,13 +1,46 @@
 import { useParams, Link } from 'react-router-dom';
-import { Container, Badge } from 'react-bootstrap';
-import { songs } from '../songs';
+import { Container, Badge, Spinner } from 'react-bootstrap';
+import { useState, useEffect } from 'react';
+import type { KidsSong } from '../types';
 import TabRenderer from '../TabRenderer';
 
 export function SongPage() {
   const { songId } = useParams<{ songId: string }>();
-  const songData = songs.find((s) => s.id === songId);
+  const [song, setSong] = useState<KidsSong | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
-  if (!songData) {
+  useEffect(() => {
+    if (!songId) {
+      setError(true);
+      setLoading(false);
+      return;
+    }
+
+    // Dynamic import - only loads when route is accessed
+    import(`../songs/${songId}.ts`)
+      .then((module) => {
+        setSong(module[songId]);
+        setLoading(false);
+      })
+      .catch(() => {
+        setError(true);
+        setLoading(false);
+      });
+  }, [songId]);
+
+  if (loading) {
+    return (
+      <Container className="py-5 text-center">
+        <Spinner animation="border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+        <p className="mt-3">Loading song...</p>
+      </Container>
+    );
+  }
+
+  if (error || !song) {
     return (
       <Container className="py-5 text-center">
         <h2>Song not found</h2>
@@ -17,8 +50,6 @@ export function SongPage() {
       </Container>
     );
   }
-
-  const { song } = songData;
 
   return (
     <Container fluid className="py-4">

@@ -3,11 +3,11 @@
 A reference list of additional public domain children's songs that could be added to this project.
 
 ## Traditional Nursery Rhymes & Action Songs
-- [ ] Three Blind Mice
-- [ ] Hot Cross Buns
-- [ ] Frère Jacques (Are You Sleeping)
-- [ ] The Muffin Man
-- [ ] Pat-a-Cake
+- [x] Three Blind Mice
+- [x] Hot Cross Buns
+- [x] Frère Jacques (Are You Sleeping)
+- [x] The Muffin Man
+- [x] Pat-a-Cake
 - [ ] Rock-a-Bye Baby
 - [ ] Hush Little Baby
 - [ ] Sing a Song of Sixpence

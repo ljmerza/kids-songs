@@ -1,14 +1,14 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { songs } from '../songs';
+import { songMetadata } from '../songs/metadata';
 
 export function HomePage() {
   return (
     <Container className="py-5">
       <h1 className="text-center mb-5">Kids Songs Guitar Tabs</h1>
       <Row xs={1} sm={2} md={3} lg={4} className="g-4">
-        {songs.map(({ id, song }) => (
-          <Col key={id}>
+        {songMetadata.map((song) => (
+          <Col key={song.id}>
             <Card className="h-100 shadow-sm">
               <Card.Body className="d-flex flex-column">
                 <Card.Title>{song.title}</Card.Title>
@@ -27,7 +27,7 @@ export function HomePage() {
                   Time: {song.time?.num || 4}/{song.time?.den || 4}
                 </Card.Text>
                 <Link
-                  to={`/song/${id}`}
+                  to={`/song/${song.id}`}
                   className="btn btn-success mt-auto"
                 >
                   Play Song

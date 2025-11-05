@@ -11,6 +11,15 @@ export type TabMeasure = {
   notes: Array<TabNote>
 }
 
+export type SongMetadata = {
+  id: string
+  title: string
+  category: string
+  tags: Array<string>
+  tempo?: number
+  time?: { num: number; den: number }
+}
+
 export type KidsSong = {
   title: string
   category: string
