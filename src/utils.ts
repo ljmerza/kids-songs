@@ -11,13 +11,11 @@ const DUR_MAP: Record<Duration, number> = {
 };
 
 export function songToAlphaTex(song: KidsSong): string {
-  const title = safeAlphaTexString(song.title || "Untitled");
   const tempo = clamp(song.tempo ?? 100, 40, 300);
   const time = song.time ?? { num: 4, den: 4 };
 
   // Score metadata (must end with a single dot line)
   const meta: string[] = [
-    `\\title "${title}"`,
     `\\tempo ${tempo}`,
   ];
 
@@ -64,9 +62,6 @@ export function songToAlphaTex(song: KidsSong): string {
   return [...meta, preface, bars.join(" ")].join("\n");
 }
 
-function safeAlphaTexString(s: string): string {
-  return s.replace(/"/g, '\\"').replace(/\n/g, " ");
-}
 function clamp(n: number, lo: number, hi: number) {
   return Math.max(lo, Math.min(n, hi));
 }
