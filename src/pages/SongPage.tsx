@@ -1,12 +1,13 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate, createSearchParams } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import type { KidsSong } from '../types';
 import TabRenderer from '../TabRenderer';
 import FancyLoader from '../components/FancyLoader';
 
 export function SongPage() {
   const { songId } = useParams<{ songId: string }>();
+  const navigate = useNavigate();
   const [song, setSong] = useState<KidsSong | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -29,6 +30,14 @@ export function SongPage() {
         setLoading(false);
       });
   }, [songId]);
+
+  const handleCategoryClick = useCallback((category: string) => {
+    navigate({ pathname: '/', search: createSearchParams({ category }).toString() });
+  }, [navigate]);
+
+  const handleTagClick = useCallback((tag: string) => {
+    navigate({ pathname: '/', search: createSearchParams({ tag }).toString() });
+  }, [navigate]);
 
   if (loading) {
     return (
@@ -60,13 +69,22 @@ export function SongPage() {
           {song.title}
         </h1>
         <div className="mb-3 d-flex flex-wrap align-items-center">
-          <span className="chip chip-category me-2 mb-2">
+          <button
+            type="button"
+            className="chip chip-category me-2 mb-2"
+            onClick={() => handleCategoryClick(song.category)}
+          >
             {song.category}
-          </span>
+          </button>
           {song.tags.map((tag) => (
-            <span key={tag} className="chip chip-tag me-2 mb-2">
+            <button
+              key={tag}
+              type="button"
+              className="chip chip-tag me-2 mb-2"
+              onClick={() => handleTagClick(tag)}
+            >
               {tag}
-            </span>
+            </button>
           ))}
         </div>
         <p className="text-muted">

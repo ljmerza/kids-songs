@@ -82,6 +82,14 @@ export function HomePage() {
     updateFilters({ query });
   }, [query, updateFilters]);
 
+  const handleCategorySelect = useCallback((category: string) => {
+    updateFilters({ category });
+  }, [updateFilters]);
+
+  const handleTagSelect = useCallback((tag: string) => {
+    updateFilters({ tag });
+  }, [updateFilters]);
+
   useEffect(() => {
     let disposed = false;
 
@@ -232,12 +240,23 @@ export function HomePage() {
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>{song.title}</Card.Title>
                   <div className="mb-3">
-                    <span className="chip chip-category me-2">{song.category}</span>
+                    <button
+                      type="button"
+                      className="chip chip-category me-2"
+                      onClick={() => handleCategorySelect(song.category)}
+                    >
+                      {song.category}
+                    </button>
                     <div className="mt-2 d-flex flex-wrap">
                       {song.tags.slice(0, 3).map((tag) => (
-                        <span key={tag} className="chip chip-tag me-2 mb-2">
+                        <button
+                          key={tag}
+                          type="button"
+                          className="chip chip-tag me-2 mb-2"
+                          onClick={() => handleTagSelect(tag)}
+                        >
                           {tag}
-                        </span>
+                        </button>
                       ))}
                     </div>
                   </div>
