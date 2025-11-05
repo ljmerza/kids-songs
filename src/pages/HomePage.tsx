@@ -58,7 +58,15 @@ export function HomePage() {
 
   return (
     <Container className="py-5">
-      <h1 className="text-center mb-5">Kids Songs Guitar Tabs</h1>
+      <div className="text-center mb-5">
+        <h1 className="hero-heading">
+          <span className="hero-heading-kids">
+            <span className="hero-heading-note" aria-hidden="true" />
+            Kids Songs
+          </span>
+          <span className="d-block">Guitar Tabs</span>
+        </h1>
+      </div>
       <Form className="mb-4">
         <Form.Control
           type="search"
@@ -80,10 +88,10 @@ export function HomePage() {
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>{song.title}</Card.Title>
                   <div className="mb-3">
-                    <span className="badge bg-primary me-2">{song.category}</span>
-                    <div className="mt-2">
+                    <span className="chip chip-category me-2">{song.category}</span>
+                    <div className="mt-2 d-flex flex-wrap">
                       {song.tags.slice(0, 3).map((tag) => (
-                        <span key={tag} className="badge bg-secondary me-1 mb-1">
+                        <span key={tag} className="chip chip-tag me-2 mb-2">
                           {tag}
                         </span>
                       ))}
@@ -95,7 +103,7 @@ export function HomePage() {
                   </Card.Text>
                   <Link
                     to={`/song/${song.id}`}
-                    className="btn btn-success mt-auto"
+                    className="btn btn-kids btn-kids-primary mt-auto"
                   >
                     Play Song
                   </Link>

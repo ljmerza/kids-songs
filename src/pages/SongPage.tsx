@@ -1,8 +1,9 @@
 import { useParams, Link } from 'react-router-dom';
-import { Container, Badge, Spinner } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import type { KidsSong } from '../types';
 import TabRenderer from '../TabRenderer';
+import FancyLoader from '../components/FancyLoader';
 
 export function SongPage() {
   const { songId } = useParams<{ songId: string }>();
@@ -31,11 +32,8 @@ export function SongPage() {
 
   if (loading) {
     return (
-      <Container className="py-5 text-center">
-        <Spinner animation="border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </Spinner>
-        <p className="mt-3">Loading song...</p>
+      <Container className="py-5 d-flex justify-content-center align-items-center">
+        <FancyLoader label="Loading song..." />
       </Container>
     );
   }
@@ -44,7 +42,7 @@ export function SongPage() {
     return (
       <Container className="py-5 text-center">
         <h2>Song not found</h2>
-        <Link to="/" className="btn btn-primary mt-3">
+        <Link to="/" className="btn btn-kids btn-kids-secondary mt-3">
           Back to Home
         </Link>
       </Container>
@@ -54,18 +52,18 @@ export function SongPage() {
   return (
     <Container fluid className="py-4">
       <div className="mb-4">
-        <Link to="/" className="btn btn-outline-secondary mb-3">
+        <Link to="/" className="btn btn-kids btn-kids-ghost mb-3">
           ← Back to All Songs
         </Link>
         <h1>{song.title}</h1>
-        <div className="mb-3">
-          <Badge bg="primary" className="me-2">
+        <div className="mb-3 d-flex flex-wrap align-items-center">
+          <span className="chip chip-category me-2 mb-2">
             {song.category}
-          </Badge>
+          </span>
           {song.tags.map((tag) => (
-            <Badge key={tag} bg="secondary" className="me-1">
+            <span key={tag} className="chip chip-tag me-2 mb-2">
               {tag}
-            </Badge>
+            </span>
           ))}
         </div>
         <p className="text-muted">
