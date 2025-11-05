@@ -72,9 +72,27 @@ export default function TabRenderer({ song }: { song: KidsSong }) {
     <div>
       <div className="tab-host" ref={hostRef} />
       <div className="controls">
-        <button onClick={() => apiRef.current?.play()}>Play</button>
-        <button onClick={() => apiRef.current?.pause()}>Pause</button>
-        <button onClick={() => apiRef.current?.stop()}>Stop</button>
+        <button
+          type="button"
+          className="btn btn-kids btn-kids-play"
+          onClick={() => apiRef.current?.play()}
+        >
+          Play
+        </button>
+        <button
+          type="button"
+          className="btn btn-kids btn-kids-pause"
+          onClick={() => apiRef.current?.pause()}
+        >
+          Pause
+        </button>
+        <button
+          type="button"
+          className="btn btn-kids btn-kids-stop"
+          onClick={() => apiRef.current?.stop()}
+        >
+          Stop
+        </button>
       </div>
     </div>
   );

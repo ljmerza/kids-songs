@@ -7,9 +7,16 @@
 }
 
 .controls {
-  margin-top: 8px;
+  margin-top: 12px;
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0.8rem 1.8rem rgba(58, 134, 255, 0.12);
+  border: 1px solid rgba(58, 134, 255, 0.12);
 }
 
 .route-loading {
@@ -228,6 +235,97 @@
   height: 0.26rem;
   right: -0.3rem;
   top: -0.7rem;
+}
+
+.song-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #191919;
+  position: relative;
+  background: linear-gradient(135deg, #ff9f1c, #ff4f79 50%, #3a86ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0.35rem 1.15rem rgba(58, 134, 255, 0.25);
+}
+
+.song-heading::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 2.5rem;
+  height: 5px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255, 159, 28, 0.55), rgba(58, 134, 255, 0.85));
+  box-shadow: 0 0.7rem 1.3rem rgba(58, 134, 255, 0.18);
+}
+
+.song-heading-note {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 0 0 3px rgba(255, 83, 112, 0.9), 0 0.4rem 0.85rem rgba(255, 83, 112, 0.25);
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.song-heading-note::before,
+.song-heading-note::after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 83, 112, 0.9);
+  border-radius: 999px;
+}
+
+.song-heading-note::before {
+  width: 3px;
+  height: 1.55rem;
+  top: -1.1rem;
+  left: 55%;
+  transform: translateX(-50%);
+}
+
+.song-heading-note::after {
+  width: 0.95rem;
+  height: 0.28rem;
+  right: -0.35rem;
+  top: -0.78rem;
+}
+
+.btn-kids-play {
+  background: linear-gradient(135deg, #4ade80, #22c55e);
+  color: #fff;
+  box-shadow: 0 0.6rem 1.4rem rgba(34, 197, 94, 0.35);
+}
+
+.btn-kids-pause {
+  background: linear-gradient(135deg, #fbbf24, #f97316);
+  color: #fff;
+  box-shadow: 0 0.6rem 1.4rem rgba(249, 115, 22, 0.35);
+}
+
+.btn-kids-stop {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+  box-shadow: 0 0.6rem 1.4rem rgba(239, 68, 68, 0.35);
+}
+
+.btn-kids-play:hover,
+.btn-kids-pause:hover,
+.btn-kids-stop:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 0.75rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+.controls .btn-kids {
+  min-width: 6.5rem;
+  font-size: 0.92rem;
 }
 
 /* alphaTab: ensure overlay cursors are visible and positioned correctly */

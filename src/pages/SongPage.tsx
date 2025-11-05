@@ -55,7 +55,10 @@ export function SongPage() {
         <Link to="/" className="btn btn-kids btn-kids-ghost mb-3">
           ← Back to All Songs
         </Link>
-        <h1>{song.title}</h1>
+        <h1 className="song-heading">
+          <span className="song-heading-note" aria-hidden="true" />
+          {song.title}
+        </h1>
         <div className="mb-3 d-flex flex-wrap align-items-center">
           <span className="chip chip-category me-2 mb-2">
             {song.category}
