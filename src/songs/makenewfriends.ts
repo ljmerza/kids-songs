@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Make%20New%20Friends
+- Songsterr: https://www.songsterr.com/?pattern=Make%20New%20Friends
+- MuseScore: https://musescore.com/sheetmusic?text=Make%20New%20Friends%20guitar
+- Chordify: https://chordify.net/search/Make%20New%20Friends
+- Google: https://www.google.com/search?q=Make%20New%20Friends%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const makenewfriends: KidsSong = {

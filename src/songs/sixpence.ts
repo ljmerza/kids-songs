@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Sing%20a%20Song%20of%20Sixpence
+- Songsterr: https://www.songsterr.com/?pattern=Sing%20a%20Song%20of%20Sixpence
+- MuseScore: https://musescore.com/sheetmusic?text=Sing%20a%20Song%20of%20Sixpence%20guitar
+- Chordify: https://chordify.net/search/Sing%20a%20Song%20of%20Sixpence
+- Google: https://www.google.com/search?q=Sing%20a%20Song%20of%20Sixpence%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const sixpence: KidsSong = {

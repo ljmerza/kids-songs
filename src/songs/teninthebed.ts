@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Ten%20in%20the%20Bed
+- Songsterr: https://www.songsterr.com/?pattern=Ten%20in%20the%20Bed
+- MuseScore: https://musescore.com/sheetmusic?text=Ten%20in%20the%20Bed%20guitar
+- Chordify: https://chordify.net/search/Ten%20in%20the%20Bed
+- Google: https://www.google.com/search?q=Ten%20in%20the%20Bed%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const teninthebed: KidsSong = {

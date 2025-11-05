@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Five%20Little%20Ducks
+- Songsterr: https://www.songsterr.com/?pattern=Five%20Little%20Ducks
+- MuseScore: https://musescore.com/sheetmusic?text=Five%20Little%20Ducks%20guitar
+- Chordify: https://chordify.net/search/Five%20Little%20Ducks
+- Google: https://www.google.com/search?q=Five%20Little%20Ducks%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const fivelittleducks: KidsSong = {

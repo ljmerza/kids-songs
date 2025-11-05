@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Little%20Bo%20Peep
+- Songsterr: https://www.songsterr.com/?pattern=Little%20Bo%20Peep
+- MuseScore: https://musescore.com/sheetmusic?text=Little%20Bo%20Peep%20guitar
+- Chordify: https://chordify.net/search/Little%20Bo%20Peep
+- Google: https://www.google.com/search?q=Little%20Bo%20Peep%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const bopeep: KidsSong = {

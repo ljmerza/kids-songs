@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=You%20Are%20My%20Sunshine
+- Songsterr: https://www.songsterr.com/?pattern=You%20Are%20My%20Sunshine
+- MuseScore: https://musescore.com/sheetmusic?text=You%20Are%20My%20Sunshine%20guitar
+- Chordify: https://chordify.net/search/You%20Are%20My%20Sunshine
+- Google: https://www.google.com/search?q=You%20Are%20My%20Sunshine%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const sunshine: KidsSong = {

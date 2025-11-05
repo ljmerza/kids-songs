@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Head%20Shoulders%20Knees%20and%20Toes
+- Songsterr: https://www.songsterr.com/?pattern=Head%20Shoulders%20Knees%20and%20Toes
+- MuseScore: https://musescore.com/sheetmusic?text=Head%20Shoulders%20Knees%20and%20Toes%20guitar
+- Chordify: https://chordify.net/search/Head%20Shoulders%20Knees%20and%20Toes
+- Google: https://www.google.com/search?q=Head%20Shoulders%20Knees%20and%20Toes%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const headshoulders: KidsSong = {

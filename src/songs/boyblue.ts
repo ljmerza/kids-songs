@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Little%20Boy%20Blue
+- Songsterr: https://www.songsterr.com/?pattern=Little%20Boy%20Blue
+- MuseScore: https://musescore.com/sheetmusic?text=Little%20Boy%20Blue%20guitar
+- Chordify: https://chordify.net/search/Little%20Boy%20Blue
+- Google: https://www.google.com/search?q=Little%20Boy%20Blue%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const boyblue: KidsSong = {

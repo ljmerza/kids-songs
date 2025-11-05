@@ -1,3 +1,12 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Five%20Little%20Monkeys
+- Songsterr: https://www.songsterr.com/?pattern=Five%20Little%20Monkeys
+- MuseScore: https://musescore.com/sheetmusic?text=Five%20Little%20Monkeys%20guitar
+- Chordify: https://chordify.net/search/Five%20Little%20Monkeys
+- Google: https://www.google.com/search?q=Five%20Little%20Monkeys%20guitar%20tabs
+- Google: https://www.google.com/search?q=Five%20Little%20Monkeys%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const monkeys: KidsSong = {

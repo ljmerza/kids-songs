@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Little%20Miss%20Muffet
+- Songsterr: https://www.songsterr.com/?pattern=Little%20Miss%20Muffet
+- MuseScore: https://musescore.com/sheetmusic?text=Little%20Miss%20Muffet%20guitar
+- Chordify: https://chordify.net/search/Little%20Miss%20Muffet
+- Google: https://www.google.com/search?q=Little%20Miss%20Muffet%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const littlemissmuffet: KidsSong = {

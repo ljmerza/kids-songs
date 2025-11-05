@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Simple%20Simon
+- Songsterr: https://www.songsterr.com/?pattern=Simple%20Simon
+- MuseScore: https://musescore.com/sheetmusic?text=Simple%20Simon%20guitar
+- Chordify: https://chordify.net/search/Simple%20Simon
+- Google: https://www.google.com/search?q=Simple%20Simon%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const simplesimon: KidsSong = {

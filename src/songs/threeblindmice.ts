@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Three%20Blind%20Mice
+- Songsterr: https://www.songsterr.com/?pattern=Three%20Blind%20Mice
+- MuseScore: https://musescore.com/sheetmusic?text=Three%20Blind%20Mice%20guitar
+- Chordify: https://chordify.net/search/Three%20Blind%20Mice
+- Google: https://www.google.com/search?q=Three%20Blind%20Mice%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const threeblindmice: KidsSong = {

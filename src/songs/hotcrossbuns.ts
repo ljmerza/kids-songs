@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Hot%20Cross%20Buns
+- Songsterr: https://www.songsterr.com/?pattern=Hot%20Cross%20Buns
+- MuseScore: https://musescore.com/sheetmusic?text=Hot%20Cross%20Buns%20guitar
+- Chordify: https://chordify.net/search/Hot%20Cross%20Buns
+- Google: https://www.google.com/search?q=Hot%20Cross%20Buns%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const hotcrossbuns: KidsSong = {

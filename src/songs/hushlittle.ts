@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Hush%20Little%20Baby
+- Songsterr: https://www.songsterr.com/?pattern=Hush%20Little%20Baby
+- MuseScore: https://musescore.com/sheetmusic?text=Hush%20Little%20Baby%20guitar
+- Chordify: https://chordify.net/search/Hush%20Little%20Baby
+- Google: https://www.google.com/search?q=Hush%20Little%20Baby%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const hushlittle: KidsSong = {

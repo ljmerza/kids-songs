@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Michael%20Row%20the%20Boat%20Ashore
+- Songsterr: https://www.songsterr.com/?pattern=Michael%20Row%20the%20Boat%20Ashore
+- MuseScore: https://musescore.com/sheetmusic?text=Michael%20Row%20the%20Boat%20Ashore%20guitar
+- Chordify: https://chordify.net/search/Michael%20Row%20the%20Boat%20Ashore
+- Google: https://www.google.com/search?q=Michael%20Row%20the%20Boat%20Ashore%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const michaelrow: KidsSong = {

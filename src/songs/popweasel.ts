@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Pop%20Goes%20the%20Weasel
+- Songsterr: https://www.songsterr.com/?pattern=Pop%20Goes%20the%20Weasel
+- MuseScore: https://musescore.com/sheetmusic?text=Pop%20Goes%20the%20Weasel%20guitar
+- Chordify: https://chordify.net/search/Pop%20Goes%20the%20Weasel
+- Google: https://www.google.com/search?q=Pop%20Goes%20the%20Weasel%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const popweasel: KidsSong = {

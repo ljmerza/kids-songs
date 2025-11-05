@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Hey%20Diddle%20Diddle
+- Songsterr: https://www.songsterr.com/?pattern=Hey%20Diddle%20Diddle
+- MuseScore: https://musescore.com/sheetmusic?text=Hey%20Diddle%20Diddle%20guitar
+- Chordify: https://chordify.net/search/Hey%20Diddle%20Diddle
+- Google: https://www.google.com/search?q=Hey%20Diddle%20Diddle%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const heydiddle: KidsSong = {

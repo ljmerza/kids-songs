@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from "react";
-import { AlphaTabApi, type json } from '@coderline/alphatab'
 import { songToAlphaTex } from "./utils";
+import type { AlphaTabApi, json } from "@coderline/alphatab";
 import type { KidsSong } from "./types";
 
 export default function TabRenderer({ song }: { song: KidsSong }) {
@@ -10,35 +10,60 @@ export default function TabRenderer({ song }: { song: KidsSong }) {
   const alphaTex = useMemo(() => songToAlphaTex(song), [song]);
 
   useEffect(() => {
-    if (!hostRef.current) return;
+    let disposed = false;
 
-    const api = new AlphaTabApi(hostRef.current, {
-      core: {
-        useWorkers: true,
-        fontDirectory: "/font/",
-      },
-      player: {
-        enablePlayer: true,
-        enableCursor: true,
-        enableUserInteraction: true,
-        soundFont: '/soundfont/sonivox.sf2'
-      },
-      notation: { staveProfile: "tab" },
-      display: { scale: 1.0 },
-    } as json.SettingsJson);
+    async function setup() {
+      if (!hostRef.current) {
+        return;
+      }
 
-    apiRef.current = api;
+      let AlphaTabApiCtor: typeof import("@coderline/alphatab").AlphaTabApi | undefined;
+      try {
+        ({ AlphaTabApi: AlphaTabApiCtor } = await import("@coderline/alphatab"));
+      } catch (error) {
+        console.error("[alphaTab] failed to load module", error);
+        return;
+      }
 
-    api.error.on((e) => console.error("[alphaTab error]", e));
-    api.scoreLoaded.on(() => console.debug("[alphaTab] scoreLoaded"));
-    api.renderStarted.on(() => console.debug("[alphaTab] renderStarted"));
-    api.renderFinished.on(() => console.debug("[alphaTab] renderFinished"));
+      if (!hostRef.current || disposed || !AlphaTabApiCtor) {
+        return;
+      }
 
-    // feed alphaTex
-    api.tex(alphaTex);
+      const api = new AlphaTabApiCtor(hostRef.current, {
+        core: {
+          // Running without the web worker keeps the bundle lean.
+          useWorkers: false,
+          fontDirectory: "/font/",
+        },
+        player: {
+          enablePlayer: true,
+          enableCursor: true,
+          enableUserInteraction: true,
+          soundFont: "/soundfont/sonivox.sf3",
+        },
+        notation: { staveProfile: "tab" },
+        display: { scale: 1.0 },
+      } as json.SettingsJson);
+
+      apiRef.current = api;
+
+      api.error.on((e) => console.error("[alphaTab error]", e));
+      api.scoreLoaded.on(() => console.debug("[alphaTab] scoreLoaded"));
+      api.renderStarted.on(() => console.debug("[alphaTab] renderStarted"));
+      api.renderFinished.on(() => console.debug("[alphaTab] renderFinished"));
+
+      api.tex(alphaTex);
+    }
+
+    setup();
 
     return () => {
-      try { apiRef.current?.destroy(); } catch { console.warn("alphaTab destroy failed"); }
+      disposed = true;
+      try {
+        apiRef.current?.destroy();
+      } catch {
+        console.warn("alphaTab destroy failed");
+      }
       apiRef.current = null;
     };
   }, [alphaTex]);

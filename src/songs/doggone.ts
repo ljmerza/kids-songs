@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Oh%20Where%2C%20Oh%20Where%20Has%20My%20Little%20Dog%20Gone
+- Songsterr: https://www.songsterr.com/?pattern=Oh%20Where%2C%20Oh%20Where%20Has%20My%20Little%20Dog%20Gone
+- MuseScore: https://musescore.com/sheetmusic?text=Oh%20Where%2C%20Oh%20Where%20Has%20My%20Little%20Dog%20Gone%20guitar
+- Chordify: https://chordify.net/search/Oh%20Where%2C%20Oh%20Where%20Has%20My%20Little%20Dog%20Gone
+- Google: https://www.google.com/search?q=Oh%20Where%2C%20Oh%20Where%20Has%20My%20Little%20Dog%20Gone%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const doggone: KidsSong = {

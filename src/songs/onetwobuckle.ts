@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=One%2C%20Two%2C%20Buckle%20My%20Shoe
+- Songsterr: https://www.songsterr.com/?pattern=One%2C%20Two%2C%20Buckle%20My%20Shoe
+- MuseScore: https://musescore.com/sheetmusic?text=One%2C%20Two%2C%20Buckle%20My%20Shoe%20guitar
+- Chordify: https://chordify.net/search/One%2C%20Two%2C%20Buckle%20My%20Shoe
+- Google: https://www.google.com/search?q=One%2C%20Two%2C%20Buckle%20My%20Shoe%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const onetwobuckle: KidsSong = {

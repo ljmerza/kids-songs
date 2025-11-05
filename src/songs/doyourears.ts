@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Do%20Your%20Ears%20Hang%20Low
+- Songsterr: https://www.songsterr.com/?pattern=Do%20Your%20Ears%20Hang%20Low
+- MuseScore: https://musescore.com/sheetmusic?text=Do%20Your%20Ears%20Hang%20Low%20guitar
+- Chordify: https://chordify.net/search/Do%20Your%20Ears%20Hang%20Low
+- Google: https://www.google.com/search?q=Do%20Your%20Ears%20Hang%20Low%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const doyourears: KidsSong = {

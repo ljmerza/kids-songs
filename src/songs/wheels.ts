@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=The%20Wheels%20on%20the%20Bus
+- Songsterr: https://www.songsterr.com/?pattern=The%20Wheels%20on%20the%20Bus
+- MuseScore: https://musescore.com/sheetmusic?text=The%20Wheels%20on%20the%20Bus%20guitar
+- Chordify: https://chordify.net/search/The%20Wheels%20on%20the%20Bus
+- Google: https://www.google.com/search?q=The%20Wheels%20on%20the%20Bus%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const wheels: KidsSong = {

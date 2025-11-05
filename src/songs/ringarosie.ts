@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Ring%20Around%20the%20Rosie
+- Songsterr: https://www.songsterr.com/?pattern=Ring%20Around%20the%20Rosie
+- MuseScore: https://musescore.com/sheetmusic?text=Ring%20Around%20the%20Rosie%20guitar
+- Chordify: https://chordify.net/search/Ring%20Around%20the%20Rosie
+- Google: https://www.google.com/search?q=Ring%20Around%20the%20Rosie%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const ringarosie: KidsSong = {

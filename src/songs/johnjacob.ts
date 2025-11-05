@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=John%20Jacob%20Jingleheimer%20Schmidt
+- Songsterr: https://www.songsterr.com/?pattern=John%20Jacob%20Jingleheimer%20Schmidt
+- MuseScore: https://musescore.com/sheetmusic?text=John%20Jacob%20Jingleheimer%20Schmidt%20guitar
+- Chordify: https://chordify.net/search/John%20Jacob%20Jingleheimer%20Schmidt
+- Google: https://www.google.com/search?q=John%20Jacob%20Jingleheimer%20Schmidt%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const johnjacob: KidsSong = {

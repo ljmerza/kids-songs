@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Down%20by%20the%20Bay
+- Songsterr: https://www.songsterr.com/?pattern=Down%20by%20the%20Bay
+- MuseScore: https://musescore.com/sheetmusic?text=Down%20by%20the%20Bay%20guitar
+- Chordify: https://chordify.net/search/Down%20by%20the%20Bay
+- Google: https://www.google.com/search?q=Down%20by%20the%20Bay%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const downbythebay: KidsSong = {

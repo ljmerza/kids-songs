@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=She%27ll%20Be%20Coming%20%27Round%20the%20Mountain
+- Songsterr: https://www.songsterr.com/?pattern=She%27ll%20Be%20Coming%20%27Round%20the%20Mountain
+- MuseScore: https://musescore.com/sheetmusic?text=She%27ll%20Be%20Coming%20%27Round%20the%20Mountain%20guitar
+- Chordify: https://chordify.net/search/She%27ll%20Be%20Coming%20%27Round%20the%20Mountain
+- Google: https://www.google.com/search?q=She%27ll%20Be%20Coming%20%27Round%20the%20Mountain%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const shellbemountain: KidsSong = {

@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Jack%20and%20Jill
+- Songsterr: https://www.songsterr.com/?pattern=Jack%20and%20Jill
+- MuseScore: https://musescore.com/sheetmusic?text=Jack%20and%20Jill%20guitar
+- Chordify: https://chordify.net/search/Jack%20and%20Jill
+- Google: https://www.google.com/search?q=Jack%20and%20Jill%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const jackandjill: KidsSong = {

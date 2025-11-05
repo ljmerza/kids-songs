@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=London%20Bridge%20Is%20Falling%20Down
+- Songsterr: https://www.songsterr.com/?pattern=London%20Bridge%20Is%20Falling%20Down
+- MuseScore: https://musescore.com/sheetmusic?text=London%20Bridge%20Is%20Falling%20Down%20guitar
+- Chordify: https://chordify.net/search/London%20Bridge%20Is%20Falling%20Down
+- Google: https://www.google.com/search?q=London%20Bridge%20Is%20Falling%20Down%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const londonbridge: KidsSong = {

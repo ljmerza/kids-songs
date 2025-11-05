@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Kumbaya
+- Songsterr: https://www.songsterr.com/?pattern=Kumbaya
+- MuseScore: https://musescore.com/sheetmusic?text=Kumbaya%20guitar
+- Chordify: https://chordify.net/search/Kumbaya
+- Google: https://www.google.com/search?q=Kumbaya%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const kumbaya: KidsSong = {

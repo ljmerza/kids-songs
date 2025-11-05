@@ -1,17 +1,26 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Container, Row, Col, Card, Form } from 'react-bootstrap';
-import Fuse from 'fuse.js';
 import { Link } from 'react-router-dom';
 import { songMetadata } from '../songs/metadata';
 import { useDebouncedValue } from '../hooks/useDebouncedValue';
+import type Fuse from 'fuse.js';
+import type { SongMetadata } from '../types';
 
 export function HomePage() {
   const [query, setQuery] = useState('');
   const debouncedQuery = useDebouncedValue(query, 250);
+  const [fuse, setFuse] = useState<Fuse<SongMetadata> | null>(null);
 
-  const fuse = useMemo(
-    () =>
-      new Fuse(songMetadata, {
+  useEffect(() => {
+    let disposed = false;
+
+    async function loadFuse() {
+      const { default: FuseModule } = await import('fuse.js');
+      if (disposed) {
+        return;
+      }
+
+      setFuse(() => new FuseModule<SongMetadata>(songMetadata, {
         keys: [
           { name: 'title', weight: 0.5 },
           { name: 'category', weight: 0.3 },
@@ -21,16 +30,30 @@ export function HomePage() {
         includeMatches: true,
         threshold: 0.35,
         minMatchCharLength: 2,
-      }),
-    [songMetadata]
-  );
+      }));
+    }
+
+    loadFuse();
+
+    return () => {
+      disposed = true;
+    };
+  }, []);
 
   const filteredSongs = useMemo(() => {
     const searchTerm = debouncedQuery.trim();
     if (!searchTerm.length) {
       return songMetadata;
     }
-    return fuse.search(searchTerm).map((result) => result.item);
+    if (fuse) {
+      return fuse.search(searchTerm).map((result) => result.item);
+    }
+    const lowered = searchTerm.toLowerCase();
+    return songMetadata.filter((song) =>
+      song.title.toLowerCase().includes(lowered) ||
+      song.category.toLowerCase().includes(lowered) ||
+      song.tags.some((tag) => tag.toLowerCase().includes(lowered))
+    );
   }, [debouncedQuery, fuse]);
 
   return (
@@ -85,3 +108,5 @@ export function HomePage() {
     </Container>
   );
 }
+
+export default HomePage;

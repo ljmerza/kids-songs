@@ -12,6 +12,11 @@
   gap: 8px;
 }
 
+.route-loading {
+  padding: 2rem;
+  text-align: center;
+}
+
 .at-surface.at > div:last-child {
   display: none !important;
 }

@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Row%20Row%20Row%20Your%20Boat
+- Songsterr: https://www.songsterr.com/?pattern=Row%20Row%20Row%20Your%20Boat
+- MuseScore: https://musescore.com/sheetmusic?text=Row%20Row%20Row%20Your%20Boat%20guitar
+- Chordify: https://chordify.net/search/Row%20Row%20Row%20Your%20Boat
+- Google: https://www.google.com/search?q=Row%20Row%20Row%20Your%20Boat%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const rowboat: KidsSong = {

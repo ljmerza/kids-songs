@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Hickory%20Dickory%20Dock
+- Songsterr: https://www.songsterr.com/?pattern=Hickory%20Dickory%20Dock
+- MuseScore: https://musescore.com/sheetmusic?text=Hickory%20Dickory%20Dock%20guitar
+- Chordify: https://chordify.net/search/Hickory%20Dickory%20Dock
+- Google: https://www.google.com/search?q=Hickory%20Dickory%20Dock%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const hickory: KidsSong = {

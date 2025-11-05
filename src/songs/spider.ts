@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Itsy%20Bitsy%20Spider
+- Songsterr: https://www.songsterr.com/?pattern=Itsy%20Bitsy%20Spider
+- MuseScore: https://musescore.com/sheetmusic?text=Itsy%20Bitsy%20Spider%20guitar
+- Chordify: https://chordify.net/search/Itsy%20Bitsy%20Spider
+- Google: https://www.google.com/search?q=Itsy%20Bitsy%20Spider%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const spider: KidsSong = {

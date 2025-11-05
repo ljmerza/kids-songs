@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Michael%20Finnegan
+- Songsterr: https://www.songsterr.com/?pattern=Michael%20Finnegan
+- MuseScore: https://musescore.com/sheetmusic?text=Michael%20Finnegan%20guitar
+- Chordify: https://chordify.net/search/Michael%20Finnegan
+- Google: https://www.google.com/search?q=Michael%20Finnegan%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const michaelfinnegan: KidsSong = {

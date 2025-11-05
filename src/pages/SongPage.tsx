@@ -76,3 +76,5 @@ export function SongPage() {
     </Container>
   );
 }
+
+export default SongPage;

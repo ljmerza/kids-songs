@@ -1,3 +1,11 @@
+/*
+Reference tab sources for this song (direct search links):
+- Ultimate Guitar: https://www.ultimate-guitar.com/search.php?search_type=title&value=Humpty%20Dumpty
+- Songsterr: https://www.songsterr.com/?pattern=Humpty%20Dumpty
+- MuseScore: https://musescore.com/sheetmusic?text=Humpty%20Dumpty%20guitar
+- Chordify: https://chordify.net/search/Humpty%20Dumpty
+- Google: https://www.google.com/search?q=Humpty%20Dumpty%20guitar%20tabs
+*/
 import type { KidsSong } from "../types";
 
 export const humpty: KidsSong = {
