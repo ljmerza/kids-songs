@@ -8,7 +8,8 @@
       "WebFetch(domain:tabs.ultimate-guitar.com)",
       "WebFetch(domain:easysongstoplay.blogspot.com)",
       "WebFetch(domain:ajsfrethouse.com)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

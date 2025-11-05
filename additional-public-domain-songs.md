@@ -8,38 +8,38 @@ A reference list of additional public domain children's songs that could be adde
 - [x] Frère Jacques (Are You Sleeping)
 - [x] The Muffin Man
 - [x] Pat-a-Cake
-- [ ] Rock-a-Bye Baby
-- [ ] Hush Little Baby
-- [ ] Sing a Song of Sixpence
-- [ ] Hey Diddle Diddle
-- [ ] The Itsy Bitsy Spider (already done)
-- [ ] Georgie Porgie
-- [ ] Little Bo Peep
-- [ ] Little Boy Blue
-- [ ] Simple Simon
-- [ ] Rub-a-Dub-Dub
+- [x] Rock-a-Bye Baby
+- [x] Hush Little Baby
+- [x] Sing a Song of Sixpence
+- [x] Hey Diddle Diddle
+- [x] The Itsy Bitsy Spider (already done)
+- [x] Georgie Porgie
+- [x] Little Bo Peep
+- [x] Little Boy Blue
+- [x] Simple Simon
+- [x] Rub-a-Dub-Dub
 
 ## Counting & Learning Songs
-- [ ] Ten in the Bed
-- [ ] One, Two, Buckle My Shoe
-- [ ] Five Little Speckled Frogs
-- [ ] Five Little Ducks
-- [ ] The Ants Go Marching
-- [ ] One Elephant Went Out to Play
-- [ ] There Were Ten in the Bed
+- [x] Ten in the Bed
+- [x] One, Two, Buckle My Shoe
+- [x] Five Little Speckled Frogs
+- [x] Five Little Ducks
+- [x] The Ants Go Marching
+- [x] One Elephant Went Out to Play
+- [x] There Were Ten in the Bed
 
 ## Folk Songs & Traditional Melodies
-- [ ] She'll Be Coming 'Round the Mountain
-- [ ] Skip to My Lou
-- [ ] Oh Where, Oh Where Has My Little Dog Gone
-- [ ] Polly Wolly Doodle
-- [ ] Do Your Ears Hang Low
-- [ ] Down by the Bay
-- [ ] Michael Finnegan (There Was an Old Man)
-- [ ] John Jacob Jingleheimer Schmidt
-- [ ] Make New Friends
-- [ ] Kumbaya
-- [ ] Michael Row the Boat Ashore
+- [x] She'll Be Coming 'Round the Mountain
+- [x] Skip to My Lou
+- [x] Oh Where, Oh Where Has My Little Dog Gone
+- [x] Polly Wolly Doodle
+- [x] Do Your Ears Hang Low
+- [x] Down by the Bay
+- [x] Michael Finnegan (There Was an Old Man)
+- [x] John Jacob Jingleheimer Schmidt
+- [x] Make New Friends
+- [x] Kumbaya
+- [x] Michael Row the Boat Ashore
 
 ## American Folk Standards
 - [ ] Oh! Susanna
@@ -86,7 +86,7 @@ A reference list of additional public domain children's songs that could be adde
 - [ ] Three Little Kittens
 - [ ] Pussy Cat, Pussy Cat
 - [ ] I Had a Little Nut Tree
-- [ ] Pop! Goes the Weasel (already done)
+- [x] Pop! Goes the Weasel (already done)
 
 ## Movement & Dance Songs
 - [ ] The Hokey Pokey
@@ -107,7 +107,7 @@ A reference list of additional public domain children's songs that could be adde
 - [ ] Where Is Thumbkin?
 - [ ] Open Shut Them
 - [ ] The Eensy Weensy Spider (variant)
-- [ ] If You're Happy and You Know It (already done)
+- [x] If You're Happy and You Know It (already done)
 
 ## Very Simple Songs (Great for Beginners)
 - [ ] Rain, Rain, Go Away

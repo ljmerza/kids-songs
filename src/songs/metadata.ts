@@ -138,6 +138,142 @@ export const songMetadata: Array<SongMetadata> = [
     time: { num: 4, den: 4 }
   },
   {
+    id: 'onetwobuckle',
+    title: 'One, Two, Buckle My Shoe',
+    category: 'Counting Songs',
+    tags: ['beginner', 'counting', 'nursery-rhyme', 'sing-along', 'traditional'],
+    tempo: 110,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'speckledfrogs',
+    title: 'Five Little Speckled Frogs',
+    category: 'Counting Songs',
+    tags: ['beginner', 'counting', 'animals', 'sing-along', 'traditional'],
+    tempo: 100,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'fivelittleducks',
+    title: 'Five Little Ducks',
+    category: 'Counting Songs',
+    tags: ['beginner', 'counting', 'animals', 'sing-along', 'traditional'],
+    tempo: 110,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'teninthebed',
+    title: 'Ten in the Bed',
+    category: 'Counting Songs',
+    tags: ['beginner', 'counting', 'bedtime', 'sing-along', 'traditional'],
+    tempo: 90,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'antsmarching',
+    title: 'The Ants Go Marching',
+    category: 'Counting Songs',
+    tags: ['beginner', 'counting', 'march', 'sing-along', 'traditional'],
+    tempo: 120,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'oneelephant',
+    title: 'One Elephant Went Out to Play',
+    category: 'Counting Songs',
+    tags: ['beginner', 'counting', 'animals', 'sing-along', 'traditional'],
+    tempo: 100,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'shellbemountain',
+    title: "She'll Be Coming 'Round the Mountain",
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'sing-along', 'upbeat', 'traditional'],
+    tempo: 120,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'skiptomylou',
+    title: 'Skip to My Lou',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'dance', 'sing-along', 'traditional'],
+    tempo: 130,
+    time: { num: 2, den: 4 }
+  },
+  {
+    id: 'doggone',
+    title: 'Oh Where, Oh Where Has My Little Dog Gone',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'animals', 'sing-along', 'traditional'],
+    tempo: 100,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'pollywolly',
+    title: 'Polly Wolly Doodle',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'sing-along', 'playful', 'traditional'],
+    tempo: 120,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'doyourears',
+    title: 'Do Your Ears Hang Low',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'sing-along', 'camp', 'traditional'],
+    tempo: 110,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'downbythebay',
+    title: 'Down by the Bay',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'sing-along', 'call-and-response', 'traditional'],
+    tempo: 110,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'michaelfinnegan',
+    title: 'Michael Finnegan',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'sing-along', 'humor', 'traditional'],
+    tempo: 120,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'johnjacob',
+    title: 'John Jacob Jingleheimer Schmidt',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'sing-along', 'repetitive', 'traditional'],
+    tempo: 120,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'makenewfriends',
+    title: 'Make New Friends',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'round', 'sing-along', 'traditional'],
+    tempo: 90,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'kumbaya',
+    title: 'Kumbaya',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'spiritual', 'sing-along', 'traditional'],
+    tempo: 80,
+    time: { num: 4, den: 4 }
+  },
+  {
+    id: 'michaelrow',
+    title: 'Michael Row the Boat Ashore',
+    category: 'Folk Songs',
+    tags: ['beginner', 'folk', 'spiritual', 'sing-along', 'traditional'],
+    tempo: 90,
+    time: { num: 4, den: 4 }
+  },
+  {
     id: 'sunshine',
     title: 'You Are My Sunshine',
     category: 'Folk Songs',

@@ -5,4 +5,7 @@ import { alphaTab } from "@coderline/alphatab/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), alphaTab()],
+  server: {
+    host: '0.0.0.0',
+  },
 })

@@ -17,6 +17,23 @@ import { monkeys } from './monkeys';
 import { humpty } from './humpty';
 import { jackandjill } from './jackandjill';
 import { thisoldman } from './thisoldman';
+import { onetwobuckle } from './onetwobuckle';
+import { speckledfrogs } from './speckledfrogs';
+import { fivelittleducks } from './fivelittleducks';
+import { teninthebed } from './teninthebed';
+import { antsmarching } from './antsmarching';
+import { oneelephant } from './oneelephant';
+import { shellbemountain } from './shellbemountain';
+import { skiptomylou } from './skiptomylou';
+import { doggone } from './doggone';
+import { pollywolly } from './pollywolly';
+import { doyourears } from './doyourears';
+import { downbythebay } from './downbythebay';
+import { michaelfinnegan } from './michaelfinnegan';
+import { johnjacob } from './johnjacob';
+import { makenewfriends } from './makenewfriends';
+import { kumbaya } from './kumbaya';
+import { michaelrow } from './michaelrow';
 import { sunshine } from './sunshine';
 import { littlemissmuffet } from './littlemissmuffet';
 import { ringarosie } from './ringarosie';
@@ -40,6 +57,23 @@ export const songs: Array<{ id: string; song: KidsSong }> = [
   { id: 'humpty', song: humpty },
   { id: 'jackandjill', song: jackandjill },
   { id: 'thisoldman', song: thisoldman },
+  { id: 'onetwobuckle', song: onetwobuckle },
+  { id: 'speckledfrogs', song: speckledfrogs },
+  { id: 'fivelittleducks', song: fivelittleducks },
+  { id: 'teninthebed', song: teninthebed },
+  { id: 'antsmarching', song: antsmarching },
+  { id: 'oneelephant', song: oneelephant },
+  { id: 'shellbemountain', song: shellbemountain },
+  { id: 'skiptomylou', song: skiptomylou },
+  { id: 'doggone', song: doggone },
+  { id: 'pollywolly', song: pollywolly },
+  { id: 'doyourears', song: doyourears },
+  { id: 'downbythebay', song: downbythebay },
+  { id: 'michaelfinnegan', song: michaelfinnegan },
+  { id: 'johnjacob', song: johnjacob },
+  { id: 'makenewfriends', song: makenewfriends },
+  { id: 'kumbaya', song: kumbaya },
+  { id: 'michaelrow', song: michaelrow },
   { id: 'sunshine', song: sunshine },
   { id: 'littlemissmuffet', song: littlemissmuffet },
   { id: 'ringarosie', song: ringarosie },
