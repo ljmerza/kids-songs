@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     alphaTab({
       assetOutputDir: false,
-      webWorkers: false,
+      webWorkers: true,
     }),
   ],
   server: {
