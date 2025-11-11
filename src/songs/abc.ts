@@ -63,7 +63,10 @@ export const abc: KidsSong = {
     },
     {
       notes: [
-        { fret: 3, string: 4, dur: "w" },
+        { fret: 3, string: 4, dur: "q" },
+        { fret: 3, string: 4, dur: "q" },
+        { fret: 3, string: 4, dur: "q" },
+        { fret: 3, string: 4, dur: "q" },
       ],
     },
     {
