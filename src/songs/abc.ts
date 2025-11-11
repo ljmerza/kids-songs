@@ -17,47 +17,48 @@ export const abc: KidsSong = {
   measures: [
     {
       notes: [
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
+        { fret: 5, string: 3, dur: "q" },
+        { fret: 5, string: 3, dur: "q" },
+        { fret: 8, string: 2, dur: "q" },
+        { fret: 8, string: 2, dur: "q" },
       ],
     },
     {
       notes: [
-        { fret: 0, string: 2, dur: "q" },
-        { fret: 0, string: 2, dur: "q" },
-        { fret: 3, string: 3, dur: "h" },
+        { fret: 5, string: 1, dur: "q" },
+        { fret: 5, string: 2, dur: "q" },
+        { fret: 8, string: 2, dur: "h" },
       ],
     },
     {
       notes: [
-        { fret: 2, string: 3, dur: "q" },
-        { fret: 2, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
+        { fret: 6, string: 2, dur: "q" },
+        { fret: 6, string: 2, dur: "q" },
+        { fret: 5, string: 2, dur: "q" },
+        { fret: 5, string: 2, dur: "q" },
       ],
     },
     {
       notes: [
-        { fret: 3, string: 4, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
+        { fret: 7, string: 3, dur: "16" },
+        { fret: 7, string: 3, dur: "16" },
+        { fret: 7, string: 3, dur: "16" },
+        { fret: 7, string: 3, dur: "16" },
+        { fret: 5, string: 3, dur: "h" },
       ],
     },
     {
       notes: [
-        { fret: 0, string: 3, dur: "h" },
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
+        { fret: 8, string: 2, dur: "h" },
+        { fret: 8, string: 2, dur: "q" },
+        { fret: 6, string: 2, dur: "q" },
       ],
     },
     {
       notes: [
-        { fret: 2, string: 3, dur: "h" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
+        { fret: 5, string: 2, dur: "q" },
+        { fret: 5, string: 2, dur: "q" },
+        { fret: 7, string: 3, dur: "h" },
       ],
     },
     {
