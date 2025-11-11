@@ -68,6 +68,32 @@ export default function TabRenderer({ song }: { song: KidsSong }) {
     };
   }, [alphaTex]);
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.code !== "Space" && event.key !== " ") {
+        return;
+      }
+
+      const target = event.target as HTMLElement | null;
+      if (target) {
+        const interactiveTags = ["INPUT", "TEXTAREA", "SELECT", "BUTTON"];
+        if (interactiveTags.includes(target.tagName) || target.isContentEditable) {
+          return;
+        }
+      }
+
+      if (!apiRef.current) {
+        return;
+      }
+
+      event.preventDefault();
+      apiRef.current.playPause();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
     <div>
       <div className="tab-host" ref={hostRef} />
