@@ -22,6 +22,10 @@ export default defineConfig({
       webWorkers: true,
     }),
   ],
+  optimizeDeps: {
+    // Keep alphaTab out of esbuild's prebundle so its plugin can rewrite worker URLs.
+    exclude: ['@coderline/alphatab'],
+  },
   define: {
     __APP_COMMIT_INFO__: JSON.stringify(commitInfo),
   },
