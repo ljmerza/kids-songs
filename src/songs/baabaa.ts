@@ -19,113 +19,101 @@ export const baabaa: KidsSong = {
       notes: [
         { fret: 0, string: 3, dur: "q" },
         { fret: 0, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
+        { fret: 3, string: 2, dur: "q" },
+        { fret: 3, string: 2, dur: "q" },
       ],
     },
     {
       notes: [
-        { fret: 0, string: 2, dur: "q" },
-        { fret: 0, string: 2, dur: "q" },
+        { fret: 0, string: 1, dur: "8" },
+        { fret: 0, string: 1, dur: "8" },
+        { fret: 0, string: 1, dur: "8" },
+        { fret: 0, string: 1, dur: "8" },
+        { fret: 3, string: 2, dur: "h" },
+      ],
+    },
+    {
+      notes: [
+        { fret: 1, string: 2, dur: "q" },
+        { fret: 1, string: 2, dur: "q" },
         { fret: 0, string: 2, dur: "q" },
         { fret: 0, string: 2, dur: "q" },
       ],
     },
     {
       notes: [
-        { fret: 3, string: 3, dur: "h" },
         { fret: 2, string: 3, dur: "q" },
         { fret: 2, string: 3, dur: "q" },
-      ],
-    },
-    {
-      notes: [
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
-      ],
-    },
-    {
-      notes: [
         { fret: 0, string: 3, dur: "h" },
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
       ],
     },
     {
       notes: [
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 2, string: 3, dur: "q" },
+        { fret: 3, string: 2, dur: "q" },
+        { fret: 3, string: 2, dur: "8" },
+        { fret: 3, string: 2, dur: "8" },
+        { fret: 1, string: 2, dur: "q" },
+        { fret: 1, string: 2, dur: "q" },
+      ],
+    },
+    {
+      notes: [
+        { fret: 0, string: 2, dur: "q" },
+        { fret: 0, string: 2, dur: "8" },
+        { fret: 0, string: 2, dur: "8" },
         { fret: 2, string: 3, dur: "h" },
       ],
     },
     {
       notes: [
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
-      ],
-    },
-    {
-      notes: [
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 2, string: 3, dur: "q" },
-      ],
-    },
-    {
-      notes: [
-        { fret: 2, string: 3, dur: "q" },
-        { fret: 2, string: 3, dur: "q" },
-        { fret: 2, string: 3, dur: "h" },
-      ],
-    },
-    {
-      notes: [
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
-      ],
-    },
-    {
-      notes: [
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
-        { fret: 3, string: 3, dur: "q" },
+        { fret: 3, string: 2, dur: "q" },
+        { fret: 3, string: 2, dur: "8" },
+        { fret: 3, string: 2, dur: "8" },
+        { fret: 1, string: 2, dur: "8" },
+        { fret: 1, string: 2, dur: "8" },
+        { fret: 1, string: 2, dur: "8" },
+        { fret: 1, string: 2, dur: "8" },
       ],
     },
     {
       notes: [
         { fret: 0, string: 2, dur: "q" },
-        { fret: 0, string: 2, dur: "q" },
+        { fret: 0, string: 2, dur: "8" },
+        { fret: 0, string: 2, dur: "8" },
+        { fret: 2, string: 3, dur: "q" },
+      ],
+    },
+    {
+      notes: [
+        { fret: 0, string: 3, dur: "q" },
+        { fret: 0, string: 3, dur: "q" },
+        { fret: 3, string: 2, dur: "q" },
+        { fret: 3, string: 2, dur: "q" },
+      ],
+    },
+    {
+      notes: [
+        { fret: 0, string: 1, dur: "8" },
+        { fret: 0, string: 1, dur: "8" },
+        { fret: 0, string: 1, dur: "8" },
+        { fret: 0, string: 1, dur: "8" },
+        { fret: 3, string: 2, dur: "h" },
+      ],
+    },
+    {
+      notes: [
+        { fret: 1, string: 2, dur: "q" },
+        { fret: 1, string: 2, dur: "q" },
         { fret: 0, string: 2, dur: "q" },
         { fret: 0, string: 2, dur: "q" },
       ],
     },
     {
       notes: [
-        { fret: 3, string: 3, dur: "h" },
         { fret: 2, string: 3, dur: "q" },
         { fret: 2, string: 3, dur: "q" },
-      ],
-    },
-    {
-      notes: [
         { fret: 0, string: 3, dur: "q" },
-        { fret: 0, string: 3, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
-        { fret: 3, string: 4, dur: "q" },
       ],
-    },
-    {
-      notes: [
-        { fret: 0, string: 3, dur: "w" },
-      ],
-    },
+    }
   ],
 };
